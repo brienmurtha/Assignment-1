@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briens HTML & CSS Project</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: rgb(242, 242, 242);
+            margin: 0;
+            padding: 0;
+        }
+        .page{
+            background-color: rgb(255, 255, 255);
+            max-width: 800px;
+            padding: 20px;
+            margin: 20px, auto;
+        }
+        h1{
+            color: rgb(102, 102, 102);
+            text-align: center;
+        }
+        label{
+            color: rgb(232, 232, 232);
+            display: block;
+            margin-bottom: 5px;
+            }
+        form{
+            margin-bottom: 20px;
+        }
+        input[type='text'],select,textarea{
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px, solid,rgb(204, 204, 204);
+            border-radius: 6px;
+            box-sizing: border-box;
+
+        }
+        input[type='submit']{
+            color: rgb(255, 255, 255);
+            background-color: rgb(76, 175, 80);
+            cursor: pointer;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+        }
+        input[type='submit']:hover{
+            background-color: rgb(69, 160, 73);
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th,
+        td{
+            border: 1px, solid, rgb(221, 221, 221);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="page">
+        <h1>HTML &CSS Project</h1>
+    <form>    
+        <label for ="name">Name</label> 
+        <input type="text"id="name" name="name" required/>
+        
+        <label for ="email">Email</label> 
+        <input type="text"id="email" name="email" required/>
+    
+        <label for ="message">Message</label> 
+        <textarea id="message" name="name" rows=4 required></textarea>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Sample Image</h2>
+    <img src="/HTML-Files/images/labrador-retriever-1210559_640.jpg" alt="Dog">
+    
+    <h2>Sample List</h2>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <table>
+        <tbody>
+            <tr>
+                <th>header 1</th>
+                <th>header 2</th>
+                <th>header 3</th>
+            </tr>
+            <tr>
+                <td>data 1</td>
+                <td>data 2</td>
+                <td>data 3</td>
+            </tr>
+            <tr>
+                <td>data 4</td>
+                <td>data 5</td>
+                <td>data 6</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
